@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Honey-Do</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script defer src=honey-do.js></script>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--For the MDL stylesheets -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='http://fonts.which is googleapis.com/css?family=Roboto:400,300,300italic,500,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//storage.googleapis.com/code.getmdl.io/1.0.1/material.teal-red.min.css" />
+    <!-- Google MDL JS-->
+    <link rel="stylesheet" href="mdl/material.min.css">
+    <!-- My stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="body">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <img class="image-logo" src="3498.png">
+                <div class="mdl-layout-spacer"></div>
+            </div>
+        </header>
+    </div>
+    <div class="mdl-grid" id='taskList'>
+        <div class="mdl-cell--4-col demo-card-event mdl-card mdl-shadow--2dp task-maker">
+            <div class="mdl-card__title mdl-card--expand">
+                <input onkeyup="enterInput()" id='task-maker' placeholder="Task: " title="task" class="mdl-textfield__input" type="text">
+                <input onkeyup="enterInput()" onclick="focusField()" id="date" title="task" class="mdl-textfield__input" type="date">
+            </div>
+            <div class="container">
+                <i onclick="deleteAll()" aria-label="Delete Completed" class="manager-icons material-icons">content_cut</i>
+                <i onclick="addTask()" aria-label="Save Task" class="manager-icons material-icons">file_upload</i>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
