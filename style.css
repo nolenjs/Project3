@@ -24,11 +24,10 @@ body {
 
 .mdl-textfield__input{
     background-color: #7a0000;
-    opacity: 1;
     height: 36px;
-    min-width: 130px;
+    min-width: 100px;
     max-width: 300px;
-    margin: 10px 3% 10px 4%;
+    margin: 10px 3% 10px 0;
 }
 
 .trash-button{
