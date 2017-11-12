@@ -1,0 +1,118 @@
+body {
+  background-color: #dfdfdf;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.task{
+  font-size: 21px;
+  margin: 0 30px 0 0;
+}
+
+.image-logo {
+  position: relative;
+  overflow: hidden;
+  height: 90px;
+  width: auto;
+  padding: 0 0 10px 0;
+}
+
+.mdl-textfield__input{
+    background-color: #7a0000;
+    opacity: 1;
+    height: 36px;
+    min-width: 130px;
+    max-width: 300px;
+    margin: 10px 3% 10px 4%;
+}
+
+.trash-button{
+  position: absolute;
+  margin: 0 0 0 25px;
+  right: 5%;
+  color: red;
+}
+
+.done{
+  color: #00ff00;
+}
+
+.mdl-layout__header {
+  background-color: #343434 !important; }
+  .mdl-layout__header .material-icons {
+    position: relative;
+    color: whitesmoke;
+    top: 4px;
+    left: 3px;
+    font-size: 40px; }
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  background: #1a1a1a;
+  color: whitesmoke; }
+
+.mdl-grid {
+  padding: 25px;
+}
+.demo-card-event.mdl-card {
+  height: 240px;
+  background: #343434;
+  text-align: center;
+}
+.demo-card-event.mdl-card.task-maker{
+  background: firebrick;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.manager-icons{
+    display: flex;
+    margin: 25px 0;
+    padding: 8px 12px 12px 12px;
+    border-radius: 8px;
+    background-color: whitesmoke;
+}
+
+.demo-card-event > .mdl-card__actions {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.demo-card-event > .mdl-card__title {
+    align-items: flex-start;
+    flex-direction: column;
+}
+.demo-card-event > .mdl-card__title > h4 {
+  margin-top: 0;
+}
+.demo-card-event > .mdl-card__actions {
+  display: flex;
+  box-sizing:border-box;
+  align-items: center;
+}
+.demo-card-event > .mdl-card__actions > .material-icons {
+  padding-right: 10px;
+}
+.demo-card-event > .mdl-card__title,
+.demo-card-event > .mdl-card__actions,
+.demo-card-event > .mdl-card__actions > .mdl-button {
+  color: #fff;
+}
+
+@media screen and (max-width: 775px) {
+  .task{
+    font-size: 18px;
+  }
+}
+
+.mdl-cell--4-col{
+  margin: 8px;
+}
