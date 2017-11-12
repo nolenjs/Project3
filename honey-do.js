@@ -24,12 +24,6 @@ function completeTask(cardId){
     txt.style.pointerEvents = "none";
 }
 
-function deleteAll(){
-    for (let i = 0; i < completed.length; i++){
-        deleteTask(i);
-    }
-}
-
 function addTask(){
     //get inputs
     let date = document.getElementById("date").value;
