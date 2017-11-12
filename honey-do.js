@@ -4,14 +4,14 @@ let completed = [];
 //cardCount for id for card
 let cardCount = 0;
 let inputCount = 0;
-
+//To delete a task
 function deleteTask(cardId){
     let id = "taskCard" + cardId;
     let parent = document.getElementById("taskList");
     let child = document.getElementById(id);
     parent.removeChild(child);
 }
-
+//Completing a task
 function completeTask(cardId){
     let id = "taskCard" + cardId;
     let complete = "complete" + cardId;
@@ -23,7 +23,7 @@ function completeTask(cardId){
     cardName.style.backgroundColor = "#00aa00";
     txt.style.pointerEvents = "none";
 }
-
+//Adding a task
 function addTask(){
     //get inputs
     let date = document.getElementById("date").value;
@@ -51,7 +51,7 @@ function addTask(){
     taskList.innerHTML += card;
     cardCount++;
 }
-
+//To change focuses on the inputs
 function enterInput(){
     let date = document.getElementById("date");
     if(event.keyCode === 13 && inputCount === 0){
@@ -63,7 +63,7 @@ function enterInput(){
         inputCount = 0;
     }
 }
-
+//If date changed first for some dumb reason
 function focusField(){
     inputCount++;
 }
